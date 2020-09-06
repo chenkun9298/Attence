@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- org.hnist.dao.ClassesMapper对应的接口 -->
+<mapper namespace="org.hnist.dao.EmployeeMapper">
+    
+
+
+  	<select id="selectbyEid" parameterType="Integer" resultType="Employee">
+        select * from employee WHERE eid=#{eid}
+        
+    </select>
+    
+    <select id="LsitallTimeCardByEid" parameterType="Integer" resultType="TimeCard">
+        select * from timecard WHERE eid=#{eid}
+        
+    </select>
+    
+    <insert id="addemployee" parameterType="Employee" >
+       insert into employee(eid,ename,dept,sex,age) values(#{eid},#{ename},#{dept},#{sex},#{age})
+       
+     
+    </insert>
+    
+     <insert id="eregister" parameterType="Employee" >
+
+       insert into role(username,password,role) values(#{eid},#{eid},0)
+    </insert>
+    
+    
+    <select id="listallEmployee"  resultType="Employee">
+        select * from employee 
+        
+    </select>
+    <delete id="employeedel" parameterType="Integer"   >
+    	 delete from employee where eid=#{eid}
+    </delete>
+    
+    
+ <insert id="Clockin"  >
+
+       insert into timecard(id,eid,oneTimecard,twoTimecard) values(null,#{eid},#{ClockinTime},null)
+    </insert>
+    
+    <insert id="Clockout_insert"  >
+
+       insert into timecard(id,eid,oneTimecard,twoTimecard) values(null,#{eid},null,#{ClockoutTime})
+    </insert>
+    
+    
+    <update id="Clockout_update">
+    update timecard
+    <set>
+    
+    twoTimecard=#{ClockoutTime}
+    
+    </set>
+    
+    where id = #{id}
+    
+    </update>
+    
+    
+    <update id="employeeEdit">
+    update Employee
+    <set>ename = #{ename}, dept =#{dept},sex = #{sex},age = #{age} </set>
+    where eid = #{eid}
+    
+    </update>
+    
+    
+    
+     <select id="listallClock" resultType="listallClock" >
+      select employee.eid,ename,dept,oneTimecard,twoTimecard  from employee,timecard where employee.eid=timecard.eid
+ 
+    </select>
+    
+    
+    <select id="listSetTime"  resultType="WorkTime">
+        select * from worktime 
+        
+    </select>
+    
+    <delete id="TimecardDel" parameterType="Integer"   >
+    	 delete from timecard where eid=#{eid}
+    </delete>
+    
+</mapper>

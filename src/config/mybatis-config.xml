@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+    
+        <typeAlias alias="Role" type="org.hnist.model.Role"/>
+         <typeAlias alias="Employee" type="org.hnist.model.Employee"/>
+          <typeAlias alias="TimeCard" type="org.hnist.model.TimeCard"/>
+           <typeAlias alias="Product" type="org.hnist.model.Product"/>
+            <typeAlias alias="listallClock" type="org.hnist.model.listallClock"/>
+            <typeAlias alias="WorkTime" type="org.hnist.model.WorkTime"/>
+    </typeAliases>
+    <mappers>
+
+         <mapper resource="org/hnist/dao/UserMapper.xml" />
+         <mapper resource="org/hnist/dao/EmployeeMapper.xml" />
+          <mapper resource="org/hnist/dao/ProductMapper.xml" />
+          
+    </mappers>
+</configuration>

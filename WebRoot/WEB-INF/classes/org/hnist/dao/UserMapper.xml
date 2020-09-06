@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- org.hnist.dao.ClassesMapper对应的接口 -->
+<mapper namespace="org.hnist.dao.UserMapper">
+    
+ 
+<select id="login" parameterType="Role" resultType="Role">
+        select * from role WHERE username=#{username} and password=#{password}
+    </select>
+
+ <select id="listallEmployee"  resultType="Employee">
+        select * from employee 
+        
+    </select>
+    <delete id="absentdel">
+    	delete from Product where eid=#{eid}
+    </delete>
+   <select id="listSetTime"  resultType="WorkTime">
+        select * from worktime 
+        
+    </select>
+    
+    <update id="toSetTime">
+    update worktime
+    <set>
+    up=#{uptime},down=#{downtime}
+    </set>
+    </update>
+</mapper>

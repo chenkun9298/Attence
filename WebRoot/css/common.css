@@ -1,0 +1,216 @@
+body, ul, ol, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div, dl, dt, dd, input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 12px;
+}
+
+img {
+    border: none;
+}
+
+li {
+    list-style: none;
+}
+
+input, select.textarea {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+a {
+    text-decpration: none
+}
+
+/**header*/
+.header{
+    font-family: Microsoft yahei;
+    font-size: 18px;
+    color: #666;
+}
+
+.header .navbar{
+    margin-bottom: 0;
+}
+.navbar-brand {
+    padding: 0 0 0 15px;
+    margin-top: 22px;
+    margin-bottom: 35px;
+}
+
+/**nav*/
+.header .navbar-collapse ul .navbar-nav {
+    margin-right: 0;
+}
+
+.navbar-defult {
+    border: none;
+    background-color: #2f318b;
+}
+
+
+.header .nav li, .header .nav li .active ul .dropdown-menu li {
+    margin: 0 30px;
+}
+
+.header .nav li a, .header .nav li a .active ul a .dropdown-menu li a {
+    padding: 10px 0;
+    width: 74px;
+}
+
+
+.header .dropdown-menu {
+    border-bottom: 2px solid #dcdcdd;
+    border-right: 2px solid #dcdcdd;
+    border-left: 2px solid #dcdcdd;
+    border-top: none;
+    border-radius: 0;
+    min-width: 120px;
+    left: -30px;
+}
+.header .dropdown-menu li a{
+    color: #666;
+}
+
+.header .navbar-nav > li {
+    padding-top: 30px;
+}
+
+.header .nav li a:hover,
+.header .nav li a:focus,
+.header .nav li .active a:hover,
+.header .nav li .active a:focus,
+.header .nav li a.dropdown-toggle:hover,
+.header .nav li a.dropdown-toggle:focus,
+.header .nav li .active ul .dropdown-menu li a:hover,
+.header .nav li .active ul .dropdown-menu li .active a {
+    padding: 10px 0;
+    color: #2f318b;
+    background: none;
+    border-bottom: 3px solid #2f318b;
+    display: block;
+
+}
+.header .navbar-default .navbar-nav > .open > a,
+.header .navbar-default .navbar-nav > .open > a:hover,
+.header .navbar-default .navbar-nav > .open > a:focus{
+    color: #2f318b;
+    border-bottom: 3px solid #2f318b;
+    background: none;
+
+}
+.header .nav li .active
+{
+    color: #2f318b;
+    border-bottom: 3px solid #2f318b;
+    background: none;
+}
+
+.navbar-collapse .nav > li:hover .dropdown-menu {
+    font-size: 18px;
+    font-family: "Microsoft yahei";
+}
+
+.navbar-collapse .nav > li:hover .dropdown-menu li a:hover{
+    border: none;!important;
+}
+/*.header .navbar-collapse  ul.navbar-nav {*/
+    /*float: right;*/
+    /*margin-right: 0;*/
+/*}*/
+
+/*.header .navbar-default{*/
+    /*background-color: #fff;*/
+/*}*/
+
+/*.header .nav li a, .header .nav li.active ul.dropdown-menu li a {*/
+    /*color: #999;*/
+    /*font-size: 18px;*/
+    /*font-weight: 300;*/
+    /*background: none;*/
+/*}*/
+
+/*.header .nav li a:hover,*/
+/*.header .nav li a:focus,*/
+/*.header .nav li.active a,*/
+/*.header .nav li.active a:hover,*/
+/*.header .nav li a.dropdown-toggle:hover,*/
+/*.header .nav li a.dropdown-toggle:focus,*/
+/*.header .nav li.active ul.dropdown-menu li a:hover,*/
+/*.header .nav li.active ul.dropdown-menu li.active a{*/
+    /*color: #2f318b ;*/
+    /*background: none;*/
+    /*border-bottom: 3px solid #2f318b;*/
+
+/*}*/
+
+
+/*.header .navbar-default .navbar-nav > .open > a,*/
+/*.header .navbar-default .navbar-nav > .open > a:hover,*/
+/*.header .navbar-default .navbar-nav > .open > a:focus {*/
+    /*color: #2f318b;*/
+    /*background:none;*/
+    /*border-bottom: 3px solid #2f318b;*/
+
+/*}*/
+
+
+/*.header .navbar {*/
+    /*min-height: 100px;*/
+/*}*/
+
+/*.header .navbar-nav > li  {*/
+    /*padding-bottom: 30px;*/
+    /*padding-top: 30px;*/
+/*}*/
+
+/*.dropdown-menu li a:hover {*/
+    /*color: #2f318b !important;*/
+/*}*/
+
+
+/*.header .dropdown-menu{*/
+    /*border-bottom: 2px solid #dcdcdd;*/
+    /*border-right: 2px solid #dcdcdd;*/
+    /*border-left: 2px solid #dcdcdd;*/
+    /*border-top: none;*/
+    /*border-radius: 0;*/
+    /*min-width: 140px;*/
+    /*left: -30px;*/
+    /*font-family: "Microsoft yahei";*/
+/*}*/
+/*.header .nav li {*/
+    /*margin: 0 30px;*/
+/*}*/
+/*.header .nav li a, .header .nav li a .active ul a .dropdown-menu li a {*/
+    /*padding: 10px 0;*/
+    /*width: 74px;*/
+/*}*/
+/*.navbar-collapse .nav > li:hover .dropdown-menu li a:hover{*/
+    /*border: none;!important;*/
+/*}*/
+
+/*footer*/
+#footer {
+    background-color: #E4E4E4;
+    color: #666;
+    font-size: 15px;
+    width: 100%;
+    display: inline-block;
+}
+
+#footer .container div {
+    margin-top: 18px;
+    margin-bottom: 30px;
+}
+
+/*modify nav 2017-12-1*/
+.header .nav li a, .header .nav li a .active ul a .dropdown-menu li a{
+	min-width: 74px;
+	width: auto;
+}

@@ -1,0 +1,39 @@
+/*carousel*/
+#myCarousel img {
+    width: 100%;
+}
+
+#content .container .icon-img br {
+    clear: both;
+    display: block;
+}
+
+#content .container .icon-img {
+    padding-top: 35px;
+    text-align: center;
+    padding-bottom: 35px;
+    font-size: 18px;
+}
+
+#content .container .icon-img span {
+    line-height: 2.5em;
+}
+
+#content .container .bg-icon-img {
+    background: url(../images/line.png) no-repeat 100% 53px;
+
+}
+
+#content .container .icon-img a {
+    text-decoration: none;
+    color: #666;
+}
+
+.font-color {
+    color: #2f318b;
+}
+
+#content .col-xs-12, .col-sm-6, .col-lg-3 {
+    padding-left: 0;
+    padding-right: 0;
+}

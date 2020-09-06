@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- org.hnist.dao.ExperimentMapper对应的接口 -->
+<mapper namespace="org.hnist.dao.ProductMapper">
+    
+      <!-- 添加 -->
+    <insert id="save" parameterType="Product" >
+        insert into product(eid,pimage,loadTime) values (#{eid},#{pimage},#{loadTime})    
+    </insert> 
+    
+    <!-- 查询用户-->
+    <select id="listallProduct" resultType="Product">
+        select employee.eid,ename,dept,pid,pimage,loadTime from employee,product where employee.eid=product.eid
+    </select> 
+    
+     <delete id="absentdel" parameterType="Integer">
+    	delete from Product where eid=#{eid}
+    </delete>
+    <select id="fd" resultType="Product">
+        select * from Product where pid=#{pid}
+    </select> 
+   
+</mapper>

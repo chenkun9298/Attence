@@ -1,0 +1,46 @@
+html {
+	height: 100%;
+}
+
+
+
+.centerdiv {
+	position: relative;
+	/*border: 1px solid red;*/
+	border: ;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+
+.login-div {
+	margin: auto auto;
+	/*border: 1px solid black;*/
+	height: 300px;
+	width: 300px;
+}
+
+#face-box {
+	/*border: 1px solid deepskyblue;*/
+	background: royalblue;
+	height: 300px;
+	width: 300px;
+	padding-top: 10px;
+	border-radius: 300px;
+	overflow: hidden;
+}
+
+#video {
+	margin-left: -100px;
+	margin-top: -10px;
+}
+
+.title{
+	text-align: center;
+	color: darkturquoise;
+}
+#register{
+	display:block;
+	margin:0 auto
+}
